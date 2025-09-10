@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive JavaScript Features 🚀</h1>
+    </header>
+
+    <main>
+        <section id="interactive-features">
+            <h2>Interactive Elements 🎮</h2>
+            <hr>
+            
+            <div class="feature-container">
+                <div class="feature">
+                    <h3>Light/Dark Mode Toggle</h3>
+                    <p>Click the button to switch between light and dark themes.</p>
+                    <button id="theme-toggle">Switch to Dark Mode</button>
+                </div>
+
+                <div class="feature">
+                    <h3>Collapsible FAQ Section</h3>
+                    <div class="faq-item">
+                        <h4 class="faq-question">What is JavaScript?</h4>
+                        <p class="faq-answer">JavaScript is a programming language that allows you to implement complex features on web pages.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">How does form validation work?</h4>
+                        <p class="faq-answer">Form validation ensures that user input is in the correct format before it's submitted to a server.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact-form-section">
+            <h2>Contact Us 📋✅</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-success-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Interactive Web Page. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
